@@ -44,4 +44,4 @@ setTimeout(() => {
         }}, 10);
 
 document.addEventListener('keydown', jump);
-document.addEventListener('touchScreen', jump);
+document.addEventListener('touch', jump);
