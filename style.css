@@ -89,7 +89,8 @@ input {
     background: blanchedalmond;
     border: 1px solid burlywood;
     border-radius: 16px;
-    padding: 16px;
     width: 125px;
     height: 32px;
+    top: 16px;
+    left: 16px;
 }

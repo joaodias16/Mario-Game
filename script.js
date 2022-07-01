@@ -1,9 +1,15 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const jumpSound = new Audio('sounds/jump.wav');
+const deathSound = new Audio('sounds/morte.wav');
+
+
 
 
 const jump = () => {
 mario.classList.add('jump');
+
+jumpSound.play(); 
 
 setTimeout(() => {
 
@@ -20,6 +26,8 @@ setTimeout(() => {
         console.log(marioPosition);
 
         if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) { 
+
+            deathSound.play();
 
             pipe.style.animation = 'none';
             pipe.style.left = `${pipePosition}px`
